@@ -1,9 +1,11 @@
-import './App.css'
+import Card from './Routes/card/Card'
+import Header from './Routes/Header/Header'
 
 function App() {
   return (
     <>
-      <h1>CodeBlog</h1>
+      <Header />
+      <Card />
     </>
   )
 }

@@ -1,6 +1,8 @@
 import { useFetch } from "../../hooks/useFetch";
 useFetch;
 
+import styles from "./Card.module.scss";
+
 const Card = () => {
     const url: string = "http://localhost:3000/posts";
     const {data, loading, error} = useFetch(url);
@@ -12,7 +14,7 @@ const Card = () => {
         return <p>Carregando artigos...</p>
 
   return (
-    <section style={{background: `blue`}}>
+    <section>
        {data?.map(item => (
         <article key={item.id}>
             <div>
