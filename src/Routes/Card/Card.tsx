@@ -14,7 +14,7 @@ const Card = () => {
         return <p>Carregando artigos...</p>
 
   return (
-    <section>
+    <section className={styles.section}>
        {data?.map(item => (
         <article key={item.id}>
             <div>

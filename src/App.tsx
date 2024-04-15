@@ -1,4 +1,4 @@
-import Card from './Routes/card/Card'
+import Card from './Routes/Card/Card'
 import Header from './Routes/Header/Header'
 
 function App() {
