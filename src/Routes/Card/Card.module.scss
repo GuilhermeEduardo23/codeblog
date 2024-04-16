@@ -1,0 +1,49 @@
+@import url("/src/index.scss");
+
+.flex_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    @extend .flex_box;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+    gap: 40px;
+}
+
+.card {
+    @extend .flex_box;
+    justify-content: center;
+    border: 2px solid #E07B67;
+    border-radius: 8px;
+    padding: 32px 24px;
+    gap: 20px;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.date {
+    color: #E07B67;
+}
+
+.icon {
+    cursor: pointer;
+    stroke: #E07B67;
+    transition: fill .3s;
+
+    &icon.filled,
+    .icon:hover {
+        fill: #E07B67;
+    }
+}
+
+.text {
+    @extend .flex_box;
+    gap: 16px;
+}

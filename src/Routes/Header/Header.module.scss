@@ -1,5 +1,50 @@
 @import url('/src/index.scss');
 
-header {
-    background: var(--blue_dark);
+$brand-color: #E07B67;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 209px;
+    border: 0 0 2px 0;
+    background-color: #17171A;
+    padding: 48px 24px;
+    gap: 32px;
+}
+
+.title {
+    font-weight: 500;
+    line-height: 30.62px;
+    text-align: center;
+}
+
+.code {
+    color: $brand-color;
+}
+
+.box_search {
+    display: flex;
+    align-items: center;
+    width: 327px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 16px 24px;
+    gap: 12px;
+    border: 2px solid #252529;
+    background-color: #202024;
+}
+
+input {
+    width: 120px;
+    height: 17px;
+    font: "Inter";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.94px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #AFABB6;
+    width: 100%;
 }
