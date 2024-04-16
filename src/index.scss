@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Space Grotesk", "Inter", sans-serif;
-    font-size: 62.5%;
 }
 
 :root {
@@ -17,30 +16,8 @@
     --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
 }
 
-html {
-    @media(max-width: 720px) {
-        font-size: 59.5%;
-    }
-
-    @media(max-width: 480px) {
-        font-size: 57.5%;
-    }
-}
-
 body {
-    font: 400 1.6rem "Lexend Deca", sans-serif;
-    background: #F3F5F7;
-}
-
-.postSection {
-    margin: 0 auto;
-    padding: 5rem 1.8rem;
+    //font: 400 1.6rem "Lexend Deca", sans-serif;
+    background: var(--linear);
     display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-
-    @media(min-width: 168px) {
-        max-width: 900px;
-        margin: 0 auto;
-    }
 }
