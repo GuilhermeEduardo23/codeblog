@@ -47,3 +47,15 @@
     @extend .flex_box;
     gap: 16px;
 }
+
+.loading {
+    @extend .card;
+    align-items: center;
+    width: 60%;
+    position: absolute;
+    bottom: 50%;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    translate: -50% -50%;
+}

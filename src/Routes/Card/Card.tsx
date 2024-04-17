@@ -20,7 +20,9 @@ const Card = () => {
         return <p>Ocorreu um erro!</p>;
 
     if(loading)
-        return <p>Carregando artigos...</p>
+        return <div className={styles.loading}>
+            <p>Carregando artigos...</p>
+        </div>
 
   return (
     <section className={styles.cards}>

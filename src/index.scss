@@ -13,11 +13,10 @@
 
     --title: #313131;
     --text: #B6B6B6;
-
-    --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
 }
 
 body {
     background: var(--dark);
     color: var(--white);
+    width: 100%;
 }

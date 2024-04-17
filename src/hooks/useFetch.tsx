@@ -6,7 +6,6 @@ interface IData {
     date: string,
     title: string,
     text: string,
-    icon: string,
 }
 
 export const useFetch = (url: string) => {
