@@ -33,12 +33,16 @@ $brand-color: #E07B67;
     gap: 12px;
     border: 2px solid #252529;
     background-color: #202024;
+    transition: .5s;
+
+    &:hover {
+        border: 2px solid #E07B67;
+    }
 }
 
 input {
     width: 120px;
     height: 17px;
-    font: "Inter";
     font-weight: 500;
     font-size: 14px;
     line-height: 16.94px;
