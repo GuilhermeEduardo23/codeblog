@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const Card = () => {
     //const url: string = "http://localhost:3000/posts";
-    const url: string = "https://codeblogdb.web.app/db.json";
+    const url: string = "https://api.npoint.io/dd06499a28fe4d89d414";
     const {data, loading, error} = useFetch(url);
 
     // Gerenciar o estado do SVG
