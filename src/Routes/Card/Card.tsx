@@ -6,7 +6,8 @@ import styles from "./Card.module.scss";
 import { useState } from "react";
 
 const Card = () => {
-    const url: string = "http://localhost:3000/posts";
+    //const url: string = "http://localhost:3000/posts";
+    const url: string = "https://codeblogdb.web.app/db.json";
     const {data, loading, error} = useFetch(url);
 
     // Gerenciar o estado do SVG
