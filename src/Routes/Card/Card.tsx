@@ -3,6 +3,8 @@ useFetch;
 
 import styles from "./Card.module.scss";
 
+import { motion } from "framer-motion";
+
 const Card = () => {
     const API_URL = import.meta.env.VITE_API_URL; 
     const {data, loading, error} = useFetch(API_URL);
@@ -16,9 +18,17 @@ const Card = () => {
         </div>
 
   return (
-    <section className={styles.cards}>
+    <motion.section className={styles.cards}>
        {data?.map(item => (
-        <article key={item.id} className={styles.card}>
+        <motion.article key={item.id} className={styles.card}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01]
+            }}
+        >
             <div className={styles.information}>
                 <p className={styles.date}>{item.date}</p>
                 <svg className={styles.icon} width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -29,9 +39,9 @@ const Card = () => {
                 <h1>{item.title}</h1>
                 <p>{item.text}</p>
             </div>
-        </article>
+        </motion.article>
        ))}
-    </section>
+    </motion.section>
   )
 }
 
