@@ -4,10 +4,9 @@ useFetch;
 import styles from "./Card.module.scss";
 
 const Card = () => {
-    const apiUrl: string = import.meta.env.VITE_API_URL;
-    console.log(import.meta.env.VITE_API_URL);
-    const {data, loading, error} = useFetch(apiUrl);
-
+    const API_URL = import.meta.env.VITE_API_URL; 
+    const {data, loading, error} = useFetch(API_URL);
+    
     if(error)
         return <p>Ocorreu um erro!</p>;
 
