@@ -5,7 +5,7 @@ import styles from "./Card.module.scss";
 
 const Card = () => {
     const apiUrl: string = import.meta.env.VITE_API_URL;
-    
+    console.log(import.meta.env.VITE_API_URL);
     const {data, loading, error} = useFetch(apiUrl);
 
     if(error)
