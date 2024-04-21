@@ -3,12 +3,10 @@ useFetch;
 
 import styles from "./Card.module.scss";
 
-import { useState } from "react";
-
 const Card = () => {
-    //const url: string = "http://localhost:3000/posts";
-    const url: string = "https://api.npoint.io/dd06499a28fe4d89d414/posts/";
-    const {data, loading, error} = useFetch(url);
+    const apiUrl: string = import.meta.env.VITE_API_URL;
+    
+    const {data, loading, error} = useFetch(apiUrl);
 
     if(error)
         return <p>Ocorreu um erro!</p>;
