@@ -16,11 +16,15 @@
 .card {
     @extend .flex_box;
     justify-content: center;
-    border: 2px solid #E07B67;
     border-radius: 8px;
+    border: 2px solid #252529;
     padding: 32px 24px;
     gap: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    &:first-child {
+        border: 2px solid #E07B67;
+    }
 }
 
 .information {
@@ -60,4 +64,23 @@
     left: 50%;
     right: 50%;
     translate: -50% -50%;
+}
+
+@media(min-width: 768px) {
+    .cards {
+        height: 936px;
+        padding: 56px 32px;
+        gap: 40px;
+    }
+
+    .card {
+        width: 704px;
+        height: 248px;
+        padding: 40px;
+        gap: 24px;
+    }
+
+    .information {
+        width: 100%;
+    }
 }

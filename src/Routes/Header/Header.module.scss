@@ -52,3 +52,16 @@ input {
     color: #AFABB6;
     width: 100%;
 }
+
+@media(min-width: 768px) {
+    .title {
+        width: 217px;
+        height: 51px;
+    }
+
+    .box_search {
+        width: 704px;
+        height: 64px;
+        gap: 16px;
+    }
+}
